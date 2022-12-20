@@ -1,10 +1,12 @@
 import React from "react";
-import { BrowserRouter, RouterProvider } from "react-router-dom";
 import { HomePage } from "./features/home/HomePage";
-import { router } from "./router/Routes";
+import { TopBar } from "./features/topbar/TopBar";
 
 export const App = () => {
     return (
-        <HomePage/>
+        <div>
+            <TopBar/>
+            <HomePage/>
+        </div>
     );
 }
